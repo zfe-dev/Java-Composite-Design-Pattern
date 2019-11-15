@@ -45,5 +45,4 @@ public class Rectangle extends AbstractForme implements Forme {
 
     }
 
-
 }

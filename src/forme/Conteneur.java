@@ -53,9 +53,7 @@ public class Conteneur extends AbstractForme implements Forme {
 
 	@Override
 	public void render(Graphics g) {
-		g.setColor(Color.blue);
-		this.getBounds();
-        g.fillRect(x1,y1,x2-x1,y2-y1);		
+		this.formesSet.forEach(e -> e.render(g));	
 	}
 	
 	public void ajouterForme(Forme form) {
@@ -65,4 +63,5 @@ public class Conteneur extends AbstractForme implements Forme {
 	public void supprimerForme(Forme form) {
 		this.formesSet.remove(form);
 	}
+
 }

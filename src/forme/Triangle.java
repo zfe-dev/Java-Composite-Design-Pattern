@@ -53,5 +53,6 @@ public class Triangle extends AbstractForme implements Forme {
         g.drawLine(x3, y3, x1, y1);
 
     }
+    
 
 }

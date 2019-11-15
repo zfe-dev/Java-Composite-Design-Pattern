@@ -60,9 +60,10 @@ public class FormeFactory {
 			int y2 = args[3];
 			
 			Conteneur cont = new Conteneur(x1, x2, y1, y2);
-			cont.ajouterForme(FormeFactory.create(2, x1, y1, x2, y2, x1 + 50, y1+50));
-			cont.ajouterForme(FormeFactory.create(1, x1, x1 - 50, y1, y1 - 50));
-			formeCreee = cont;
+			cont.ajouterForme(FormeFactory.create(FORME_TRIANGLE, x1, y1, x2, y2, x1 + 50, y1+50));
+			Forme contForm = new LabelDecorator(cont);
+			//cont.ajouterForme(FormeFactory.create(1, x1, x1 - 50, y1, y1 - 50));
+			formeCreee = contForm;
 		}
 		return formeCreee;
 	}
