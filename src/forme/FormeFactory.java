@@ -62,6 +62,7 @@ public class FormeFactory {
 			Conteneur cont = new Conteneur(x1, x2, y1, y2);
 			cont.ajouterForme(FormeFactory.create(FORME_TRIANGLE, x1, y1, x2, y2, x1 + 50, y1+50));
 			Forme contForm = new LabelDecorator(cont);
+			contForm = new PoisDecorator(contForm);
 			//cont.ajouterForme(FormeFactory.create(1, x1, x1 - 50, y1, y1 - 50));
 			formeCreee = contForm;
 		}

@@ -48,7 +48,7 @@ public class Conteneur extends AbstractForme implements Forme {
 		x2 = x2List.stream().mapToInt(e -> e).max().getAsInt();
 		y1 = y1List.stream().mapToInt(e -> e).min().getAsInt();
 		y2 = y2List.stream().mapToInt(e -> e).max().getAsInt();
-		return new Rectangle2D.Double(x1, x2, y1, y2);
+		return new Rectangle2D.Double(x1, y1, x2 - x1, y2 - y1);
 	}
 
 	@Override
